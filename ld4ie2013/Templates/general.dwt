@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>K-Views</title>
+<!-- TemplateEndEditable -->
+<link rel="stylesheet" href="../resources/wit.css" type="text/css" />
+	<style type="text/css">
+		.dcseml {
+		 	display: none;
+		}
+	</style>
+
+
+<style type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	width:900px;
+	height:754px;
+	z-index:1;
+	left: 2px;
+}
+#Layer2 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+	visibility: inherit;
+}
+#Layer3 {
+	position:absolute;
+	width:755px;
+	height:438px;
+	z-index:2;
+	left: 7px;
+	top: 121px;
+}
+#Layer4 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:3;
+}
+#Layer5 {
+	position:absolute;
+	width:760px;
+	height:23px;
+	z-index:3;
+	left: 2px;
+	top: 97px;
+}
+#Layer6 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:5;
+	left: 560px;
+	top: 55px;
+}
+#Layer7 {
+	position:absolute;
+	width:824px;
+	height:1140px;
+	z-index:1;
+	left: 0px;
+	top: 0px;
+}
+#Layer8 {
+	position:absolute;
+	width:760px;
+	height:92px;
+	z-index:4;
+	left: 2px;
+	top: 2px;
+}
+-->
+</style>
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+</head>
+
+<body>
+<div id="wrapper"">
+	<div id="Layer7">
+	  <div id="Layer5">
+        <h2 id="head2"><a href="http://nlp.shef.ac.uk/wig">Web Intelligence Group</a> | <a href="http://nlp.shef.ac.uk">Natural Language Processing</a> | <a href="http://www.dcs.shef.ac.uk">Department of Computer Science</a> | <a href="http://www.shef.ac.uk">University of Sheffield</a></h2>
+      </div>
+	  <div id="Layer3">
+        <div id="mainEditRegion"><!-- TemplateBeginEditable name="HeaderEditRegion" -->
+          <h3>K-Views</h3>
+          <!-- TemplateEndEditable -->
+		  
+          <div id="main"><!-- TemplateBeginEditable name="EditRegion" -->
+            <div class="section" id="research">
+              <h4><a name="research" id="research"></a>Header 1 </h4>
+              <ul>
+                <li>bullet 1</li>
+                <li>bullet 2  </li>
+              </ul>
+            </div>
+            <div class="section" id="publications">
+              <h4><a name="publications" id="publications"></a>Header 2 </h4>
+              <ul>
+                <li>bullet 1</li>
+                <li>bullet 2  </li>
+              </ul>
+              <p><a href="#top">back to top</a></p>
+            </div>
+          <!-- TemplateEndEditable --></div>
+          <p>&nbsp;</p>
+          <p>&nbsp; </p>
+        </div>
+	    <div id="Layer6">
+          <div id="secondary">
+            <div class="meta">
+              <h3>links</h3>
+              
+              <ul>
+                <!-- TemplateBeginEditable name="LinksEditRegion" -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="http://www.x-media-project.org">X-Media</a></li>
+                <li><a href="http://www.3worlds.org">IPAS</a></li>
+				<!-- TemplateEndEditable -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+	  <div id="Layer8">
+      <div align="center"><a name="top" id="top"></a><img src="../images/wig-bg-head.png" width="758" height="93" /></div>
+	  </div>
+  </div>
+</div>
+</body>
+</html>

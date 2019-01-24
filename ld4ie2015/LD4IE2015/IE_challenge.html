@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="Generator" content="iWeb 3.0.4" />
+    <meta name="iWeb-Build" content="local-build-20151013" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="viewport" content="width=700" />
+    <title>IE Challenge Organizers
+Robert Meusel, University of Mannheim, Germany
+Heiko Paulheim, University of Mannheim, Germany
+Ziqi Zhang, University of Sheffield, UK
+The extraction of data from unstructured or semi-structured web sources has been recognized as a suitable way of populating the data web. Since many pages already use embedded structured data, e.g., as RDFa, Microformats, or Microdata, this information can be used to bootstrap and train supervised systems extracting structured data from the web. In this challenge, we want to compare systems using such annotated pages for extracting information from the web.
+
+The challenge will be held at the Linked Data for Information Extraction (LD4IE) workshop 2015, co-located with the International Semantic Web Conference.
+
+The best performing solution will be awarded a Springer voucher worth 250 Euros.
+
+Task Description
+The challenge task is to write an information extraction system that will scrape structured information from HTML web sites. To train the system, training data is made available as web sites containing markup, in particular, Microdata from five classes:
+
+* MusicRecording
+* Person
+* Recipe
+* Restaurant
+* SportsEvent
+
+There will be two tasks:
+(a) extracting from a website which is known to contain data of a particular class
+(b) extracting from a website which is known to contain data of one of the five classes (but not which)
+
+Datasets
+To create a gold standard, we have used a subset of files from the Web Data Commons Microdata dataset, which contains a set of web pages extracted from the Common Crawl containing Microdata annotations. This year's challenge focuses on five classes in schema.org.
+
+Training Data
+The training data can be found here
+There are five sets of training data, one for each class. Each set consists of:
+* The original page, including the Microdata markup (*.train.gz)
+* The cleaned page, where all Microdata markup (and all comments and JavaScript) has been removed (*.train.clean.gz)
+* The RDF quads extracted from the Microdata markup (*.train.nq.gz)
+
+Test Data
+For task (a), there are five different test datasets for each class, named *.test.clean.gz. For task (b), there is a mixed test dataset called mixed.test.clean.gz. Those files are processed in the same manner as the *train.clean.gz files.
+
+File Formats
+Each HTML page (from *.train.gz, *.train.clean.gz, and *.test.clean.gz) is represented in the file in three following:
+
+    1. URI: [URI of the crawled page]
+    2. Content-Type: [Content Type including detect charset of the crawled page]
+    3. Content: [The actuall HTML content without linebreaks. In case of the *.clean.* version, annotations and comments where removed from the HTML code]
+
+_*.nq_: These files include the nquad representation of all Microdata related instances which could be extracted from the original HTML code of all pages included in the corresponding file using the Any23 library.
+
+Submission Instructions &amp; Dates
+To take part in the challenge, please submit an nquads (.nq) file for each of the test datasets, formatted like the result files provided with the training sets, which contains the quads extracted from the test dataset of HTML pages. Please note that only schema.org quads should be extracted.
+
+Along with the extracted quads, you are expected to submit a short paper describing your approach, as well as some of your own evaluation results and findings. The paper must be formatted in Springer LNCS style and must not exceed four pages.
+
+To make the submission, place both the n-quads file and the paper in a ZIP archive, and submit it via Easychair.
+
+Timeline:
+* 15th September 2015 (submission of system descriptions, max 4 pages)
+* 30th September 2015 (submission of results)
+* Challenge date: 12nd October 2015 (co-located with LD4IE2015)
+
+Evaluation
+We will evaluate the submitted results based on recall, precision, and F-measure on statement level. A statement in the submitted results is counted as a true positive if it matches a statement in the gold standard, i.e., its subject, predicate, object, and origin are identical. Two blank nodes are always considered identical, i.e., we follow the RDF semantics specification for equality of RDF documents.
+
+The best performing solution will be determined by using the Macro Average F-measure across all six test datasets.
+
+Baseline Results:
+We have implement a simple baseline for the six different datasets. For the first 
+five, where the domain/class of the page is known, the baseline consists of a single triple for each page stating this specific class. For the mixed task we randomly decide for one of the five possible classes and include a statement for this page. 
+The following table lists recall, precision and F1 for the six different files:
+</title>
+    <link rel="stylesheet" type="text/css" media="screen,print" href="IE_challenge_files/IE_challenge.css" />
+    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='IE_challenge_files/IE_challengeIE.css'/><![endif]-->
+    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+    <style type="text/css">
+/*<![CDATA[*/
+	@import "Scripts/Widgets/HTMLRegion/Paste.css";
+/*]]>*/
+</style>
+    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
+    <script type="text/javascript" src="Scripts/Widgets/SharedResources/WidgetCommon.js"></script>
+    <script type="text/javascript" src="Scripts/Widgets/Navbar/navbar.js"></script>
+    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
+    <script type="text/javascript" src="Scripts/iWebMediaGrid.js"></script>
+    <script type="text/javascript" src="Scripts/Widgets/HTMLRegion/Paste.js"></script>
+    <script type="text/javascript" src="IE_challenge_files/IE_challenge.js"></script>
+  </head>
+  <body style="background: rgb(255, 255, 255); margin: 0pt; " onload="onPageLoad();" onunload="onPageUnload();">
+    <div style="text-align: center; ">
+      <div style="margin-bottom: 0px; margin-left: auto; margin-right: auto; margin-top: 0px; overflow: hidden; position: relative; word-wrap: break-word;  background: rgb(255, 255, 255); text-align: left; width: 700px; " id="body_content">
+        <div style="margin-left: 0px; position: relative; width: 700px; z-index: 0; " id="nav_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div class="com-apple-iweb-widget-navbar flowDefining" id="widget0" style="margin-left: 0px; margin-top: 0px; opacity: 1.00; position: relative; width: 695px; z-index: 1; ">
+    
+            <div id="widget0-navbar" class="navbar">
+
+      
+              <div id="widget0-bg" class="navbar-bg">
+
+        
+                <ul id="widget0-navbar-list" class="navbar-list">
+ <li></li> 
+</ul>
+                
+      
+</div>
+              
+    
+</div>
+          </div>
+          <script type="text/javascript"><!--//--><![CDATA[//><!--
+new NavBar('widget0', 'Scripts/Widgets/Navbar', 'Scripts/Widgets/SharedResources', '.', {"path-to-root": "", "navbar-css": ".navbar {\n\tfont-family: Arial, sans-serif;\n\tfont-size: 1em;\n\tcolor: #666;\n\tmargin: 9px 0px 6px 0px;\n\tline-height: 30px;\n}\n\n.navbar-bg {\n\ttext-align: center;\n}\n\n.navbar-bg ul {\n\tlist-style: none;\n\tmargin: 0px;\n\tpadding: 0px;\n}\n\n\nli {\n\tlist-style-type: none;\n\tdisplay: inline;\n\tpadding: 0px 10px 0px 10px;\n}\n\n\nli a {\n\ttext-decoration: none;\n\tcolor: #666;\n}\n\nli a:visited {\n\ttext-decoration: none;\n\tcolor: #666;\n}\n\nli a:hover\r{\r\n \tcolor: #463C3C;\n\ttext-decoration: none;\r}\n\n\nli.current-page a\r{\r\t color: #463C3C;\n\ttext-decoration: none;\n\tfont-weight: bold;\r\r}\n", "current-page-GUID": "6C24BC53-7B9F-4A57-9342-10708A0AA752", "isCollectionPage": "NO"});
+//--><!]]></script>
+          <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
+        </div>
+        <div style="height: 2726px; margin-left: 0px; position: relative; width: 700px; z-index: 10; " id="header_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div style="height: 1px; width: 630px;  height: 1px; left: 35px; position: absolute; top: 3px; width: 630px; z-index: 1; " class="tinyText">
+            <div style="position: relative; width: 630px; ">
+              <img src="IE_challenge_files/shapeimage_1.jpg" alt="" style="height: 1px; left: 0px; position: absolute; top: 0px; width: 630px; " />
+            </div>
+          </div>
+          
+
+
+          <div id="id1" style="height: 2325px; left: 46px; position: absolute; top: 170px; width: 630px; z-index: 1; " class="style_SkipStroke shape-with-text">
+            <div class="text-content style_External_630_2325" style="padding: 0px; ">
+              <div class="style">
+                <p style="padding-top: 0pt; " class="paragraph_style">IE Challenge Organizers<br /></p>
+                <p class="paragraph_style_1"><a title="http://dws.informatik.uni-mannheim.de/en/people/researchers/robert-meusel/" href="http://dws.informatik.uni-mannheim.de/en/people/researchers/robert-meusel/">Robert Meusel</a>, University of Mannheim, Germany<br /></p>
+                <p class="paragraph_style_1"><a title="http://www.heikopaulheim.com/" href="http://www.heikopaulheim.com/">Heiko Paulheim</a>, University of Mannheim, Germany<br /></p>
+                <p class="paragraph_style_1"><a title="http://staffwww.dcs.shef.ac.uk/people/Z.Zhang" href="http://staffwww.dcs.shef.ac.uk/people/Z.Zhang">Ziqi Zhang</a>, University of Sheffield, UK<br /></p>
+                <p class="paragraph_style_2"><br /></p>
+                <p class="paragraph_style_1">The extraction of data from unstructured or semi-structured web sources has been recognized as a suitable way of populating the data web. Since many pages already use embedded structured data, e.g., as RDFa, Microformats, or Microdata, this information can be used to bootstrap and train supervised systems extracting structured data from the web. In this challenge, we want to compare systems using such annotated pages for extracting information from the web.<br /></p>
+                <p class="paragraph_style_3"><br /></p>
+                <p class="paragraph_style_4">The challenge will be held at the Linked Data for Information Extraction (LD4IE) workshop 2015, co-located with the International Semantic Web Conference.<br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style_6">The best performing solution will be awarded a Springer voucher worth 250 Euros.<br /></p>
+                <p class="paragraph_style_6"><br /></p>
+                <p class="paragraph_style_7">Task Description<br /></p>
+                <p class="paragraph_style_1">The challenge task is to write an information extraction system that will scrape structured information from HTML web sites. To train the system, training data is made available as web sites containing markup, in particular, Microdata from five classes:<br /></p>
+                <p class="paragraph_style_1"><br /></p>
+                <p class="paragraph_style_1">* MusicRecording<br /></p>
+                <p class="paragraph_style_1">* Person<br /></p>
+                <p class="paragraph_style_1">* Recipe<br /></p>
+                <p class="paragraph_style_1">* Restaurant<br /></p>
+                <p class="paragraph_style_1">* SportsEvent<br /></p>
+                <p class="paragraph_style_1"><br /></p>
+                <p class="paragraph_style_1">There will be two tasks:<br /></p>
+                <p class="paragraph_style_1">(a) extracting from a website which is known to contain data of a particular class<br /></p>
+                <p class="paragraph_style_1">(b) extracting from a website which is known to contain data of one of the five classes (but not which)<br /></p>
+                <p class="paragraph_style_1"><br /></p>
+                <p class="paragraph_style_7">Datasets<br /></p>
+                <p class="paragraph_style_1">To create a gold standard, we have used a subset of files from the Web Data Commons Microdata dataset, which contains a set of web pages extracted from the Common Crawl containing Microdata annotations. This year's challenge focuses on five classes in schema.org.<br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style">Training Data<br /></p>
+                <p class="paragraph_style_1">The training data can be found <a title="http://data.dws.informatik.uni-mannheim.de/LD4IE/2015/data/" href="http://data.dws.informatik.uni-mannheim.de/LD4IE/2015/data/">here</a><br /></p>
+                <p class="paragraph_style_1">There are five sets of training data, one for each class. Each set consists of:<br /></p>
+                <p class="paragraph_style_1">* The original page, including the Microdata markup (*.train.gz)<br /></p>
+                <p class="paragraph_style_1">* The cleaned page, where all Microdata markup (and all comments and JavaScript) has been removed (*.train.clean.gz)<br /></p>
+                <p class="paragraph_style_1">* The RDF quads extracted from the Microdata markup (*.train.nq.gz)<br /></p>
+                <p class="paragraph_style_1"><br /></p>
+                <p class="paragraph_style">Test Data<br /></p>
+                <p class="paragraph_style_1">For task (a), there are five different test datasets for each class, named *.test.clean.gz. For task (b), there is a mixed test dataset called mixed.test.clean.gz. Those files are processed in the same manner as the *train.clean.gz files.<br /></p>
+                <p class="paragraph_style_1"><br /></p>
+                <p class="paragraph_style">File Formats<br /></p>
+                <p class="paragraph_style_1">Each HTML page (from *.train.gz, *.train.clean.gz, and *.test.clean.gz) is represented in the file in three following:<br /></p>
+                <p class="paragraph_style_1"><br /></p>
+                <p class="paragraph_style_1">    1. URI: [URI of the crawled page]<br /></p>
+                <p class="paragraph_style_1">    2. Content-Type: [Content Type including detect charset of the crawled page]<br /></p>
+                <p class="paragraph_style_1">    3. Content: [The actuall HTML content without linebreaks. In case of the *.clean.* version, annotations and comments where removed from the HTML code]<br /></p>
+                <p class="paragraph_style_1"><br /></p>
+                <p class="paragraph_style_1">_*.nq_: These files include the nquad representation of all Microdata related instances which could be extracted from the original HTML code of all pages included in the corresponding file using the Any23 library.<br /></p>
+                <p class="paragraph_style_5"><br /></p>
+                <p class="paragraph_style">Submission Instructions &amp; Dates<br /></p>
+                <p class="paragraph_style_1">To take part in the challenge, please submit an nquads (.nq) file for each of the test datasets, formatted like the result files provided with the training sets, which contains the quads extracted from the test dataset of HTML pages. Please note that only schema.org quads should be extracted.<br /></p>
+                <p class="paragraph_style_1"><br /></p>
+                <p class="paragraph_style_1">Along with the extracted quads, you are expected to submit a short paper describing your approach, as well as some of your own evaluation results and findings. The paper must be formatted in Springer LNCS style and must not exceed four pages.<br /></p>
+                <p class="paragraph_style_1"><br /></p>
+                <p class="paragraph_style_1">To make the submission, place both the n-quads file and the paper in a ZIP archive, and submit it via Easychair.<br /></p>
+                <p class="paragraph_style_1"><br /></p>
+                <p class="paragraph_style_1">Timeline:<br /></p>
+                <p class="paragraph_style_1">* 15th September 2015 (submission of system descriptions, max 4 pages)<br /></p>
+                <p class="paragraph_style_1">* 30th September 2015 (submission of results)<br /></p>
+                <p class="paragraph_style_1">* Challenge date: 12nd October 2015 (co-located with LD4IE2015)<br /></p>
+                <p class="paragraph_style_1"><br /></p>
+                <p class="paragraph_style_7">Evaluation<br /></p>
+                <p class="paragraph_style_1">We will evaluate the submitted results based on recall, precision, and F-measure on statement level. A statement in the submitted results is counted as a true positive if it matches a statement in the gold standard, i.e., its subject, predicate, object, and origin are identical. Two blank nodes are always considered identical, i.e., we follow the RDF semantics specification for equality of RDF documents.<br /></p>
+                <p class="paragraph_style_1"><br /></p>
+                <p class="paragraph_style_1">The best performing solution will be determined by using the Macro Average F-measure across all six test datasets.<br /></p>
+                <p class="paragraph_style_1"><br /></p>
+                <p class="paragraph_style_1">Baseline Results:<br /></p>
+                <p class="paragraph_style_1">We have implement a simple baseline for the six different datasets. For the first <br /></p>
+                <p class="paragraph_style_1">five, where the domain/class of the page is known, the baseline consists of a single triple for each page stating this specific class. For the mixed task we randomly decide for one of the five possible classes and include a statement for this page. <br /></p>
+                <p class="paragraph_style_1">The following table lists recall, precision and F1 for the six different files:<br /></p>
+              </div>
+            </div>
+          </div>
+          <div class="com-apple-iweb-widget-HTMLRegion" id="widget1" style="height: 178px; left: 162px; opacity: 1.00; position: absolute; top: 2548px; width: 398px; z-index: 1; ">
+            <script type="text/javascript"><!--//--><![CDATA[//><!--
+    var widget1_htmlMarkupURL = ".//IE_challenge_files/widget1_markup.html";
+//--><!]]></script>
+            <div id="widget1-htmlRegion" class="html_region_widget"></div>
+          </div>
+          <script type="text/javascript"><!--//--><![CDATA[//><!--
+new Paste('widget1', 'Scripts/Widgets/HTMLRegion', 'Scripts/Widgets/SharedResources', '.', {"emptyLook": false});
+//--><!]]></script>
+          <div id="id2" style="height: 112px; left: 346px; position: absolute; top: 19px; width: 354px; z-index: 1; " class="style_SkipStroke shape-with-text">
+            <div class="text-content style_External_354_112" style="padding: 0px; ">
+              <div class="style">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_8">LD4IE 2015 <br />Linked Data for Information Extraction</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div style="height: 114px; width: 306px;  height: 114px; left: 40px; position: absolute; top: -5px; width: 306px; z-index: 1; " class="tinyText style_SkipStroke_1 stroke_0">
+            <img src="IE_challenge_files/droppedImage.png" alt="" style="border: none; height: 114px; width: 307px; " />
+          </div>
+          
+
+
+          <div id="id3" style="height: 35px; left: 25px; position: absolute; top: 114px; width: 645px; z-index: 1; " class="style_SkipStroke_2 shape-with-text">
+            <div class="text-content graphic_textbox_layout_style_default_External_645_35" style="padding: 0px; ">
+              <div class="graphic_textbox_layout_style_default">
+                <p style="padding-bottom: 0pt; padding-top: 0pt; " class="paragraph_style_9"><span style="line-height: 18px; " class="style_1">ISWC 2015 Workshop, October 12 2015, Bethlehem, Pennsylvania - USA </span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-left: 0px; position: relative; width: 700px; z-index: 5; " id="body_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          <div id="id4" style="height: 120px; left: 46px; position: absolute; top: 36px; width: 630px; z-index: 1; " class="style_SkipStroke shape-with-text">
+            <div class="text-content style_External_630_120" style="padding: 0px; ">
+              <div class="style">
+                <p style="padding-top: 0pt; " class="paragraph_style_7">Contact<br /></p>
+                <p class="paragraph_style_1">For questions about the challenge, please contact <a onclick="window.open(this.href); return false;" title="http://dws.informatik.uni-mannheim.de/en/people/professors/drheikopaulheim" href="http://dws.informatik.uni-mannheim.de/en/people/professors/drheikopaulheim" onkeypress="window.open(this.href); return false;">Heiko Paulheim</a>.<br /></p>
+                <p class="paragraph_style_1"><br /></p>
+                <p class="paragraph_style">Acknowledgements<br /></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style_1">The challenge has been kindly supported by the <a onclick="window.open(this.href); return false;" title="http://webdatacommons.org" href="http://webdatacommons.org" onkeypress="window.open(this.href); return false;">Web Data Commons project</a>.</p>
+              </div>
+            </div>
+          </div>
+          <div style="height: 480px; line-height: 480px; " class="spacer"> </div>
+        </div>
+        <div style="height: 150px; margin-left: 0px; position: relative; width: 700px; z-index: 15; " id="footer_layer">
+          <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+

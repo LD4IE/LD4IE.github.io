@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>EKAW Tutorial - KA from Social Networking Sites</title>
+
+	<link rel="stylesheet" href="../resources/wit.css" type="text/css" />
+	<style type="text/css">
+		.dcseml {
+		 	display: none;
+		}
+	</style>
+
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<style type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	width:900px;
+	height:754px;
+	z-index:1;
+	left: 2px;
+}
+#Layer2 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+	visibility: inherit;
+}
+#Layer3 {
+	position:absolute;
+	width:755px;
+	height:438px;
+	z-index:2;
+	left: 7px;
+	top: 153px;
+}
+#Layer4 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:3;
+}
+#Layer5 {
+	position:absolute;
+	width:760px;
+	height:23px;
+	z-index:13;
+	left: -1px;
+	top: 119px;
+}
+#Layer6 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:5;
+	left: 563px;
+	top: 93px;
+}
+#Layer7 {
+	position:absolute;
+	width:824px;
+	height:1140px;
+	z-index:1;
+	left: 0px;
+	top: 0px;
+}
+#Layer8 {
+	position:absolute;
+	width:760px;
+	height:92px;
+	z-index:4;
+	left: 2px;
+	top: 2px;
+}
+.style1 {font-size: 10px}
+-->
+</style>
+</head>
+
+<body>
+<div id="wrapper"">
+	<div id="Layer7">
+	  <div id="Layer5">
+        <h2 id="head2"><a href="http://oak.dcs.shef.ac.uk/">OAK Group</a> | <a href="http://www.dcs.shef.ac.uk">Department of Computer Science</a> | <a href="http://www.shef.ac.uk">University of Sheffield</a></h2>
+      </div>
+	  <div id="Layer3">
+        <div id="mainEditRegion">
+          <h3>KA from Social Networking Sites</h3>
+          <h4>Liberate the Potential for Developing Intelligent Applications</h4>
+        <hr>
+          <!-- TemplateBeginEditable name="mainEditRegion" -->
+          <div id="main">
+            <div class="itemWithImage">
+              <p><img src="../photos/ziqi.png" alt="aba-sah - summer 2006" width="121" height="146" /></p>
+              <h5>Ziqi Zhang<br />
+                <br />
+              </h5>
+			  <p><span class="style24" style="font-size: 10px">profile</span></p>
+			  <p>&nbsp;</p>
+			  <p>&nbsp;</p>
+			  <p>&nbsp;</p>
+			  <p><span class="style24" style="font-size: 10px"><span class="dcseml">"</span>Web: <a href="http://www.dcs.shef.ac.uk/%7Eziqizhang/" title="Ziqi's   homepage" rel="foaf:homepage">http://www.dcs.shef.ac.uk/~ziqizhang</a></span></p>
+			  <p>&nbsp;</p>
+            </div>
+            <div class="itemWithImage">
+              <p><img src="../photos/elizabeth.jpg" alt="aba-sah - summer 2006" width="121" height="147" /></p>
+              <h5>Ampeli E. Cano<br />
+                <br />
+              </h5>
+			  <p><span class="style24" style="font-size: 10px">profile</span></p>
+			  <p>&nbsp;</p>
+			  <p>&nbsp;</p>
+			  <p>&nbsp;</p>
+			  <p><span class="style24" style="font-size: 10px"><span class="dcseml">"</span>Web: <a href="http://www.dcs.shef.ac.uk/%7Eelizabeth/" title="Sam's homepage" rel="foaf:homepage">http://www.dcs.shef.ac.uk/~elizabeth</a></span></p>
+			  <p>&nbsp;</p>
+            </div>
+            <div class="itemWithImage">
+              <p><img src="../photos/khadija.jpg" alt="aba-sah - summer 2006" width="121" height="180" /></p>
+              <h5>Khadija Elbedweihy<br />
+                <br />
+              </h5>
+			  <p><span class="style24" style="font-size: 10px">profile</span></p>
+			  <p>&nbsp;</p>
+			  <p>&nbsp;</p>
+			  <p>&nbsp;</p>
+			  <p><span class="style24" style="font-size: 10px"><span class="dcseml">"</span>Web: <a href="http://www.dcs.shef.ac.uk/%7Ekelbed/" title="Khadija's   homepage" rel="foaf:homepage">http://www.dcs.shef.ac.uk/~kelbed</a></span></p>
+			  <p>&nbsp;</p>
+            </div>
+            <div class="itemWithImage">
+              <p><img src="../photos/aba-sah_regular.jpg" alt="aba-sah - summer 2006" width="121" height="180" /></p>
+              <h5>Aba-Sah Dadzie<br />
+                <br />
+              </h5>
+			  <p><span class="style24" style="font-size: 10px">Support Tutor</span></p>
+			  <p><span class="style1">Aba-Sah...</span></p>
+			  <p>&nbsp;</p>
+			  <p>&nbsp;</p>
+			  <p><span class="style24" style="font-size: 10px"><span class="dcseml">"</span>Web: <a href="http://www.dcs.shef.ac.uk/%7Eaba-sah/" title="Aba-Sah's   homepage" rel="foaf:homepage">http://www.dcs.shef.ac.uk/~aba-sah</a></span></p>
+			  <p>&nbsp;</p>
+            </div>
+            <div class="section" id="research">
+              <h4><a name="research" id="research"></a>Research Interests</h4>
+              <ul>
+                <li>Human-Computer Interaction</li>
+                <li>Information Visualisation</li>
+                <li>Web Technologies </li>
+              </ul>
+            </div>
+            <div class="section" id="publications">
+              <h4><a name="publications" id="publications"></a>Publications</h4>
+              <ul>
+              </ul>
+              <p><a href="#top">back to top</a></p>
+            </div>
+          </div>
+          <!-- TemplateEndEditable -->
+          <p>&nbsp;</p>
+          <p>&nbsp; </p>
+        </div>
+	    <div id="Layer6">
+          <div id="secondary">
+            <div class="meta">
+              <h3>links</h3>
+              <ul>
+                <li><a href="http://ekaw2010.inesc-id.pt">EKAW 2010</a></li>
+                <li><a href="http://ekaw2010.inesc-id.pt/call-for-tutorials.html">EKAW Call for Tutorials</a><br />
+                  <br />
+                </li>
+                <li><a href="index.html">KA from SNA Home</a></li>
+                <li><a href="outline.html">Tutorial Outline</a></li>
+                <li><a href="tutors.html">Presenter Profiles</a><br />
+                  <br />
+                </li>
+                <li><a href="tutorial_prep.html">Preparing for the Tutorial</a></li>
+              <!-- TemplateBeginEditable name="linksBox" -->              <!-- TemplateEndEditable -->
+              </div>
+              </ul>
+          </div>
+        </div>
+      </div>
+	  <div id="Layer8">
+      <!--<div align="left"><a name="top" id="top"></a><img src="../images/oak-blue.jpg" width="459" height="122"/></div>-->
+	  </div>
+  </div>
+</div>
+</body>
+</html>

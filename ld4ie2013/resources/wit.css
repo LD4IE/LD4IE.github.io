@@ -1,0 +1,338 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 76%;
+	background-color: #fff;
+	text-align: center;
+	min-width: 750px;
+	margin: 0 0 50px;
+	line-height: 1.3em;
+}
+
+a {
+	text-decoration: none;
+}
+a:link {
+	color: #f60;
+	border-bottom: 1px solid #f60;
+}
+a:visited {
+	color: #f60;
+	border-bottom: 1px dashed #f60;
+}
+a:hover {
+	color: #fff;
+	background-color: #069;
+	border: 0;
+}
+
+h3 {
+	font-size: 1.4em;
+	margin: 0 0 10px;
+	color: #069;
+	clear: both;
+	padding-top: 20px;
+}
+h4 {
+	font-size: 1.2em;
+	color: #036;
+}
+h4 a:link, h4 a:visited {
+	border-bottom: none;
+}
+h5 {
+	font-size: 0.90em;
+	margin-bottom: 0px;
+}
+
+#wrapper {
+	width: 758px;
+	margin: 0 auto;
+	padding: 0;
+	text-align: left;
+	position: relative;
+}
+
+abbr {
+	cursor: help;
+	text-decoration: none;
+	font-style: normal;
+	background-color: #cff;
+}
+
+address {
+	font-style: normal;
+}
+
+/* ******
+	PAGE TITLE HEADERS
+	 ****** */
+
+h1#head {
+	width: 758px;
+	height: 93px;
+	margin: 0;
+	padding: 0;	
+	background: url("../images/bg-head.png") no-repeat top left;
+	text-indent: -5000px;
+	overflow: hidden;
+}
+
+h2#head2 {
+	font-size: 11px;
+	font-weight: normal;
+	margin: 0;
+	padding-right: 12px;
+	text-align: right;
+	color: #036;
+}
+
+h2#head2 a {
+	border-bottom: none;
+	color: #036;
+}
+h2#head2 a:hover {
+	color: #fff;
+	background-color: #069;
+}
+
+/* ******
+	NAVIGATION
+	 ****** */
+
+ul#nav {
+	width: 100%;
+	height: 38px;
+	background: url(../images/bg-nav.png) no-repeat top left;
+	margin: 4px 0 0;
+	_margin: 0; /* IE hack */
+	padding: 0 0 0 10px;
+	list-style: none;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+ul#nav li {
+	float: left;
+}
+
+ul#nav li a {
+	display: block;
+	line-height: 30px;
+	background: url("../images/divider-nav.png") no-repeat right top;
+	margin: 2px 0 3px 0;
+	padding: 0 1em;
+}
+
+ul#nav a:link, ul#nav a:visited {
+	color: #fff;
+	text-decoration: none;
+	border: 0;
+}
+ul#nav a:hover {
+	color: #f60;
+	border: 0;
+}
+
+/* ******
+	PAGE LAYOUT
+	 ****** */
+
+#main {
+	width: 750px;
+	float: left;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	padding-left: 2px; /* For shadow on headers */
+}
+
+#secondary {
+	width: 240px;
+	float: right;
+	padding-right: 6px; /* For shadow on headers */
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+
+/* ******
+	MAIN CONTENT
+	 ****** */
+
+p#intro {
+	color: #036;
+	font-size: 118%;
+}
+
+p#intro a {
+	border-bottom: none;
+}
+
+p.rdf {
+	text-align: right;
+}
+p.rdf a img {
+	border: 0;
+}
+
+/* ******
+	PAGE TITLE HEADERS
+	 ****** */
+
+/* Generics */
+h3#title {
+	background-repeat: no-repeat;
+	text-indent: -5000px;
+	overflow: hidden;
+	height: 31px;
+	padding: 0;
+}
+
+/* index page */
+#home h3#title {
+	width: 111px;
+	background-image: url("../images/text-welcome.gif");
+}
+
+/* people pages */
+#people h3#title {
+	width: 86px;
+	background-image: url("../images/text-people.gif");
+}
+
+/* research pages */
+#research h3#title {
+	width: 107px;
+	background-image: url("../images/text-research.gif");
+}
+
+/* tools pages */
+#tools h3#title {
+	width: 59px;
+	background-image: url("../images/text-tools.gif");
+}
+
+/* contact pages */
+#contact h3#title {
+	width: 91px;
+	background-image: url("../images/text-contact.gif");
+	background-position: 0 4px; /* short text */
+}
+
+
+/* ******
+	SECONDARY CONTENT
+	 ****** */
+
+.meta {
+	width: 220px;
+	background: url("../images/bg-meta.png") no-repeat;
+	padding: 0 10px;
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+.meta h3 {
+	line-height: 28px;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	text-align: right;
+	font-weight: normal;
+	text-transform: lowercase;
+}
+
+.news_item {
+	padding: 10px 0 0;
+	margin: 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.news_item h4 {
+	margin: 0;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.news_item h4 a {
+	border: none;
+}
+
+.news_item p {
+	margin-top: 3px;
+	margin: 3px 0 12px;
+}
+
+.meta li a {
+	border-bottom: none;
+}
+
+.section {
+	padding-bottom: 20px;
+}
+
+.item, .itemWithImage {
+	border-top: 1px solid #036;
+	clear: both;
+}
+
+.itemWithImage img {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+.itemWithImage ul {
+	list-style-position: inside;
+}
+
+.minor {
+	color: #c1d9e5;
+}
+
+/* ******
+	FOOTER
+	 ****** */
+
+#footer {
+	clear: both;
+}
+
+#copyright {
+	float: left;
+}
+#copyright a {
+	width: 92px;
+	height: 40px;
+	display: block;
+	text-indent: -5000px;
+	text-decoration: none;
+	border: none;
+	background: url("../images/crest.jpg") no-repeat top left;
+	overflow: hidden;
+}
+#copyright a:hover {
+	background-position: left bottom;
+}
+
+ul#footNav {
+	float: right;
+	display: inline;
+	list-style: none;
+	padding: 15px 0 0;
+	margin: 0;
+}
+
+ul#footNav li {
+	display: inline;
+}
+
+ul#footNav a {
+	padding: 0px 5px 0 8px;
+	border-left: 1px solid #ccc;
+	border-bottom: none;
+}
+ul#footNav .first a {
+	border-left: none;
+}
+ul#footNav a:hover {
+	background-color: transparent;
+	color: #036;
+}	
